@@ -13,14 +13,9 @@ public class Response {
     private String operationUid;
     private String systemName;
     private String systemTime;
-    private String source;
     private String code;
     private String errorCode;
     private String errorMessage;
-    private int conmunicationId;
-    private int templateld;
-    private int productCode;
-    private int smsCode;
 }
 
 

@@ -43,7 +43,7 @@ public class MyController {
         try {
             validationService.isValid(bindingResult);
             if ("123".equals(request.getUid())) {
-                throw new UnsupportedCodeException("Неподдерживаемый UID: 123");
+                throw new UnsupportedCodeException("Не поддерживаемая ошибка");
             }
         } catch (ValidationFailedException e) {
             response.setCode("failed");
