@@ -13,7 +13,22 @@ import lombok.AllArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class Request {
+    @Override
+    public String toString(){
+        return "{" +
+                "uid=`" + uid + '\'' +
+                ", operationUid='" + operationUid + '\'' +
+                ", systemNam" + systemName + '\'' +
+                ", systemTime='" + systemTime + '\'' +
+                ", source=`" + source + '\'' +
+                ", communicationId=" + communicationId +
+                ", templateId=" + templateId +
+                ", productCode=" + productCode +
+                ", smsCode=" + smsCode +
+                "}";
+    }
 
     @NotBlank
     @Size(max = 32)
@@ -23,7 +38,7 @@ public class Request {
     @Size(max = 32)
     private String operationUid;
 
-    private String systemName;
+    private Systems systemName;
 
     @NotBlank
     private String systemTime;
